@@ -119,4 +119,16 @@ IO.puts("\v2 + 2 \" #{2 + 2} \" \# \\\\ ") # Note use of backslash \ for " # \ \
 IO.puts(?A)
 IO.puts(Integer.to_string(?A, 16))
 test_string_utf_hex = 0x0041 = 65 = ?A
-IO.puts("\vString to UTF to Hex #{test_string_utf_hex}")
+IO.puts("\vString to UTF to Hex = #{test_string_utf_hex}")
+
+IO.puts("\vResults from List and Tuple Operations")
+
+list = [1,2,3,4]
+second_list = [5,6,7,8]
+add_list = list ++ second_list
+IO.puts("\vList concatenation #{list ++ second_list}")
+
+IO.puts("\vResults from function creation")
+
+add = fn a,b -> a + b end
+IO.puts("\vAdd function called via interpolation #{add.(1,2)}")
