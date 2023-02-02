@@ -126,9 +126,23 @@ IO.puts("\vResults from List and Tuple Operations")
 list = [1,2,3,4]
 second_list = [5,6,7,8]
 add_list = list ++ second_list
-IO.puts("\vList concatenation #{list ++ second_list}")
+
+IO.puts("\vList concatenation with IO.puts #{inspect(list ++ second_list)}")
+IO.puts("\vList + Element concatenation #{inspect(list ++ [5])}")
+IO.inspect(list ++ second_list, label: "\vList Concatenation with IO.inspect")
 
 IO.puts("\vResults from function creation")
 
 add = fn a,b -> a + b end
-IO.puts("\vAdd function called via interpolation #{add.(1,2)}")
+IO.puts("\vAdd function called via interpolation #{add.(1,2)}\n")
+
+tuple_1 = {1,2,3,4}
+tuple_2 = {4,5,6,7}
+
+
+IO.puts("\vResult from dbg -> debug #{inspect(dbg(tuple_1))}") #dbg() -> for debug
+
+IO.puts("\vTuple Addition via elem extraction #{(elem(tuple_1,3) + elem(tuple_2,2))}") # Note no equivalent elem fn exists for lists
+
+
+IO.puts("\vResults from def fn Main do")
