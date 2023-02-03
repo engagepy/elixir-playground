@@ -144,5 +144,8 @@ IO.puts("\vResult from dbg -> debug #{inspect(dbg(tuple_1))}") #dbg() -> for deb
 
 IO.puts("\vTuple Addition via elem extraction #{(elem(tuple_1,3) + elem(tuple_2,2))}") # Note no equivalent elem fn exists for lists
 
+IO.puts("\vResults from Tuple insertion")
+
+IO.puts("\vTuple #{inspect(Tuple.to_list(tuple_1))}")
 
 IO.puts("\vResults from def fn Main do")
