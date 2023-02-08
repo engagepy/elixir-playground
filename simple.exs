@@ -148,4 +148,11 @@ IO.puts("\vResults from Tuple insertion")
 
 IO.puts("\vTuple #{inspect(Tuple.to_list(tuple_1))}")
 
+IO.puts("\vResults from String.methods")
+
+IO.puts String.reverse("Zorawar Purohit\v")
+IO.puts String.upcase("Zorawar Purohit")
+IO.puts String.downcase("Zorawar Purohit")
+IO.puts String.capitalize("zorawaR puroHit")
+
 IO.puts("\vResults from def fn Main do")
