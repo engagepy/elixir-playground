@@ -1,5 +1,5 @@
 # elixir_playground
 
-Basic lessons and syntax for hands on trial of exlixir
+Basic lessons and syntax for hands on `elixir`.
 
-Here to stay
+Here to stay !
